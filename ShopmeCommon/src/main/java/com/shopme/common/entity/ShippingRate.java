@@ -12,6 +12,7 @@ public class ShippingRate extends IdBasedEntity {
 
 	private float rate;
 	private int days;
+
 	
 	@Column(name = "cod_supported")
 	private boolean codSupported;
