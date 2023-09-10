@@ -91,9 +91,10 @@ public class UserController {
 	}
 	
 	@GetMapping("/users/edit/{id}")
-	public String editUser(@PathVariable(name = "id") Integer id, 
+	public String editUser(@PathVariable(name = "id") Integer id,
 			Model model,
 			RedirectAttributes redirectAttributes) {
+
 		try {
 			User user = service.get(id);
 			List<Role> listRoles = service.listRoles();
